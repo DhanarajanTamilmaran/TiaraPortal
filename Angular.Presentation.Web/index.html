@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>   
+   <script data-main="main.js" src="lib/Requirejs/require.js"></script>   
+	<link href="styles/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="styles/metisMenu/metisMenu.min.css" rel="stylesheet">
+    <link href="dist/css/sb-admin-2.css" rel="stylesheet">
+    <link href="styles/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="styles/morrisjs/morris.css" rel="stylesheet">
+    <link href="styles/datatables-plugins/dataTables.bootstrap.css" rel="stylesheet">
+    <link href="styles/datatables-responsive/dataTables.responsive.css" rel="stylesheet">
+    <link rel="shortcut icon" type="image/png" href="images/favicon.png" />
+   
+	<!-- Script -->
+      <script data-main="main.js" src="lib/Requirejs/require.min.js"></script>
+    <script src="styles/jquery/jquery.min.js"></script>   
+    <script src="styles/metisMenu/metisMenu.min.js"></script>   
+    <script src="dist/js/sb-admin-2.js"></script> 
+   
+    
+
+  
+   
+   <!--<script src="styles/datatables/js/jquery.dataTables.min.js"></script>
+    <script src="styles/datatables-plugins/dataTables.bootstrap.min.js"></script>
+    <script src="styles/datatables-responsive/dataTables.responsive.js"></script>-->
+
+
+</head>
+
+<body ng-cloak ontouchstart="">
+    <div class="container-fluid">
+        <header>
+            <!--<div data-ui-view="content"></div>-->
+            <div data-ui-view="header"></div>
+        </header>
+    </div>
+        <div data-ui-view="content"></div>
+    
+
+        <section class="main-content">
+            <div>
+                <toaster-container toaster-options="{'time-out': 5000}"></toaster-container>
+            </div>
+
+        </section>
+
+</body>
+
+</html>

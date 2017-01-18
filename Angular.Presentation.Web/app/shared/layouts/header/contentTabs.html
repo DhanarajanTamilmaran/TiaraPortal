@@ -1,0 +1,29 @@
+﻿<div>
+    <div id="tabs" class="main-content-tab">
+
+        <div data-ng-if="proTabs!=undefined && proTabs.length > 0">
+            <!--Print & FAQ Icon-->
+            <div class="print-help-cntr">
+                <ul class="print-ico">
+                    <!--<img src="images/print.png" data-ng-click="printTarget"> 
+                    <img src="images/question.png">-->
+                </ul>
+            </div>
+
+            <!--Tabs-->
+            <!--<ul class="main-tab-inner">
+                <li data-ng-repeat="item in proTabs" data-ng-class="{active:item.isActive}">
+                    <a data-ng-click="item.isActive == false && activateTab(item.state, item.displayText, true, item.title, item.params)" href="#">
+                        {{item.displayText}}
+                        <img src="images/login/cancel-btn-grey.png" class="libackground" data-ng-click="removeTab($index)" data-ng-if="item.canClose" />
+                    </a>
+                </li>
+            </ul>-->
+        </div>
+
+    </div>
+    <!--Main Content View-->
+    <div data-ui-view="content"></div>
+    <div data-ui-view="detail"></div>
+</div>
+
